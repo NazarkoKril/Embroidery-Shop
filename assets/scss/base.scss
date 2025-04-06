@@ -99,6 +99,7 @@
   align-items: center;
   gap: 8px;
   padding: 10px 16px;
+  transition: var(--trans);
 
   .btn-icon {
     height: 20px;
@@ -116,7 +117,7 @@
 }
 
 .black-btn {
-  background-color: var(--color_black_10);
+  background-color: #101010E5;
   color: var(--color_white);
   @include general-btn;
 
