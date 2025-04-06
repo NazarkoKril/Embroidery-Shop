@@ -2,9 +2,16 @@
 @import url(../css/fonts.css);
 
 :root {
-  --trans: all 0.35s ease-in-out;
-  --color_dark: #453526;
-  --color_lite: #ece5db;
+  --trans: all 0.3s ease-out;
+  --color_black: #101010;
+  --color_black_10: #1010101A;
+  --color_white: #FFFFFF;
+  --color_green_400: #0C998C;
+  --color_green_500: #0A8075;
+  --color_pure_400: #FFEDDE;
+  --color_pure_500: #E5D5C8;
+  --color_red_400: #FF6F61;
+  --color_red_500: #E56457;
 }
 
 // header-----------------------------------------------------------------------------
