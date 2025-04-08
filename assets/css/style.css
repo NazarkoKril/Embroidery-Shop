@@ -68,7 +68,7 @@
   border-radius: 22px;
 }
 .header-cart-count {
-  color: var(--colours-neutrals-black-500, rgba(16, 16, 16, 0.5019607843));
+  color: rgba(16, 16, 16, 0.5019607843);
   font-size: 12.6px;
 }
 
@@ -171,6 +171,10 @@
   display: none;
 }
 
+.backet_main {
+  display: none;
+}
+
 .h__right a,
 .backet {
   display: flex;
@@ -204,3 +208,364 @@
     display: none;
   }
 }
+.hero-section {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  height: 800px;
+}
+.hero-section .left, .hero-section .right {
+  flex: 1;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.hero-section .left img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.hero-section .right {
+  background-color: var(--color_pure_400);
+}
+.hero-section .hero-info {
+  padding-top: 140px;
+}
+.hero-section .hero-info .hero-title {
+  color: var(--color_green_500);
+  margin-bottom: 24px;
+}
+.hero-section .hero-info h1 {
+  margin-bottom: 20px;
+  color: var(--color_black);
+}
+.hero-section .hero-info .hero-text {
+  margin-bottom: 32px;
+  color: var(--color_black);
+  max-width: 445px;
+}
+
+.buttons2 {
+  display: flex;
+  gap: 8px;
+}
+
+.point-section {
+  padding: 100px 0;
+}
+.point-section h2 {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.point-section .point-block {
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+}
+.point-section .point-block .left, .point-section .point-block .right {
+  flex: 1;
+}
+.point-section .point-block .left {
+  background-color: var(--color_pure_400);
+  padding: 40px;
+}
+.point-section .point-block .point-info {
+  margin-bottom: 138px;
+}
+.point-section .point-block .point-info p {
+  margin-bottom: 24px;
+  color: var(--color_green_500);
+}
+.point-section .point-block .point-info h2 {
+  color: var(--color_black);
+}
+.point-section .point-block .right img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.small-advantages {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.small-advantages-item {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  padding-right: 16px;
+  align-items: center;
+  background-color: var(--color_white);
+  border-radius: 99px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.small-advantages-item img {
+  width: 24px;
+  height: 24px;
+}
+
+.services-section {
+  padding: 100px 0;
+  background-color: var(--color_green_500);
+}
+.services-section .services-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.services-section .services-head h2 {
+  color: var(--color_white);
+}
+.services-section .services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gen-card {
+  display: block;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 446.67px;
+  background-color: var(--color_pure_400);
+  transition: var(--trans);
+}
+.gen-card:nth-child(even) {
+  background-color: var(--color_red_400);
+}
+.gen-card:nth-child(even):hover, .gen-card:nth-child(even):active {
+  background-color: var(--color_red_500);
+}
+.gen-card-head {
+  height: 311px;
+  width: 100%;
+  position: relative;
+}
+.gen-card-head button {
+  position: absolute;
+  top: 20px;
+  right: 19.67px;
+}
+.gen-card-img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.gen-card-info {
+  padding: 28px;
+  color: var(--color_black);
+}
+.gen-card-info h4 {
+  margin-bottom: 20px;
+}
+.gen-card:hover, .gen-card:active {
+  background-color: var(--color_pure_500);
+}
+.gen-card:active {
+  transform: scale(0.9);
+}
+.gen-card:focus-visible {
+  outline: 1px solid var(--color_green_500);
+}
+
+.advantages-section {
+  padding: 100px 0;
+  background-color: var(--color_pure_400);
+}
+.advantages-section .advantages-head {
+  margin-bottom: 32px;
+}
+.advantages-section .advantages-head p {
+  color: var(--color_green_500);
+  margin-bottom: 24px;
+}
+.advantages-section .advantages-head h3 {
+  color: var(--color_black);
+}
+.advantages-section .advantages-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.advantages-section .advantages-info .left, .advantages-section .advantages-info .right {
+  flex: 1;
+}
+.advantages-section .advantages-info .advantages-item {
+  padding-top: 28px;
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+  border-top: 1px solid rgba(16, 16, 16, 0.2);
+}
+.advantages-section .advantages-info .advantages-item img {
+  width: 24px;
+  height: 24px;
+  align-self: flex-start;
+}
+.advantages-section .advantages-info .advantages-item-text {
+  color: var(--color_black);
+  max-width: 487px;
+}
+.advantages-section .advantages-info .advantages-item-text h4 {
+  margin-bottom: 12px;
+}
+
+.bestsellers-section {
+  padding: 100px 0;
+}
+.bestsellers-section .bestsellers-head {
+  margin-bottom: 60px;
+  color: var(--color_black);
+}
+.bestsellers-section .bestsellers-head h2 {
+  margin-bottom: 24px;
+}
+.bestsellers-section .bestsellers-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(332.5px, 1fr));
+  grid-auto-rows: 296px;
+  gap: 10px;
+}
+.bestsellers-section .bestsellers-info .bestsellers-card {
+  border-radius: 20px;
+  background-color: var(--color_green_400);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: var(--trans);
+}
+.bestsellers-section .bestsellers-info .bestsellers-card.big {
+  grid-column: span 2;
+  grid-row: span 2;
+  justify-content: space-between;
+  background-color: var(--color_red_400);
+}
+.bestsellers-section .bestsellers-info .bestsellers-card.big:hover, .bestsellers-section .bestsellers-info .bestsellers-card.big:active {
+  background-color: var(--color_red_500);
+}
+.bestsellers-section .bestsellers-info .bestsellers-card-head {
+  height: 458px;
+  width: 100%;
+  overflow: hidden;
+}
+.bestsellers-section .bestsellers-info .bestsellers-card-head img {
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.bestsellers-section .bestsellers-info .bestsellers-card button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.bestsellers-section .bestsellers-info .bestsellers-card-text {
+  padding: 28px;
+  color: var(--color_white);
+}
+.bestsellers-section .bestsellers-info .bestsellers-card-text h4 {
+  margin-bottom: 20px;
+}
+.bestsellers-section .bestsellers-info .bestsellers-card:hover, .bestsellers-section .bestsellers-info .bestsellers-card:active {
+  background-color: var(--color_green_500);
+}
+.bestsellers-section .bestsellers-info .bestsellers-card:active {
+  transform: scale(0.9);
+}
+.bestsellers-section .bestsellers-info .bestsellers-card:focus-visible {
+  outline: 1px solid var(--color_green_500);
+}
+
+.reviews-section {
+  background-color: var(--color_pure_400);
+}
+.reviews-section .swiper {
+  padding: 100px 0;
+  padding-left: 40px;
+}
+.reviews-section .swiper-wrapper {
+  width: 100%;
+}
+.reviews-section .swiper-slide {
+  width: 447px;
+}
+.reviews-section .swiper-button-prev, .reviews-section .swiper-button-next {
+  position: unset;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 0;
+}
+.reviews-section .swiper-button-prev::after, .reviews-section .swiper-button-next::after {
+  content: none;
+}
+.reviews-section .reviews-head {
+  margin-bottom: 60px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.reviews-section .reviews-head h2 {
+  color: var(--color_black);
+}
+
+.review-card {
+  background-color: var(--color_white);
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 28px;
+}
+.review-card-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 56px;
+}
+.review-card-user img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+}
+.review-card-user-info h6 {
+  color: var(--color_black);
+  margin-bottom: 4px;
+}
+.review-card-user-info p {
+  color: var(--color_green_400);
+}
+.review-card-text {
+  color: var(--color_black);
+}
+
+.cta-section {
+  background-color: var(--color_pure_400);
+  padding: 10px;
+}
+.cta-section .cta {
+  padding: 136px 40px;
+  border-radius: 20px;
+  background-color: var(--color_red_400);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color_white);
+  text-align: center;
+}
+.cta-section .cta p {
+  margin-bottom: 16px;
+}
+.cta-section .cta h2 {
+  width: 420px;
+  margin-bottom: 24px;
+}/*# sourceMappingURL=style.css.map */
