@@ -149,14 +149,13 @@
 .burger-menu {
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3s ease-out;
+  transition: var(--trans);
 
   .burger-container {
-      
-  padding: 0 16px 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+    padding: 0 16px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
 
   .header-line {
@@ -167,7 +166,6 @@
 
   &.active {
       max-height: 280px;
-      overflow: visible;
   }
 }
 
@@ -714,7 +712,7 @@
     padding: 80px 0;
   }
 
-  .reviews-section {
+  .swiper {
     padding: 80px 0;
   }
 }
