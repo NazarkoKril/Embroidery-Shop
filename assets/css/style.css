@@ -17,6 +17,7 @@
   position: fixed;
   top: 20px;
   z-index: 100;
+  width: 100%;
 }
 .header-container {
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.0509803922);
@@ -569,7 +570,7 @@
   margin-bottom: 16px;
 }
 .cta-section .cta h2 {
-  width: 420px;
+  max-width: 420px;
   margin-bottom: 24px;
 }
 
@@ -729,5 +730,6 @@
     font-size: 40px;
     line-height: 48px;
     letter-spacing: -1px;
+    max-width: 289px;
   }
 }/*# sourceMappingURL=style.css.map */
