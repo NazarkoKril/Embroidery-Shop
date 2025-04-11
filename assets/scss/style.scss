@@ -895,6 +895,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 40px 20px;
 
     .logo img {
       height: 40px;
@@ -922,6 +923,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 36px 10px;
 
     &-item {
       width: 140px;
@@ -969,7 +971,7 @@
 
   &-info {
     display: flex;
-    gap: 40px;
+    gap: 36px 40px;
     justify-content: space-between;
     flex-wrap: wrap;
 
@@ -1032,6 +1034,7 @@
     border-top: 1px solid #10101033;
     color: #10101080;
     flex-wrap: wrap-reverse;
+    gap: 10px;
   }
 
   &-privacy {
@@ -1046,6 +1049,7 @@
     letter-spacing: -0.25px;
     color: #10101080;
     position: relative;
+    white-space: nowrap;
 
     &::before {
       content: "";
@@ -1072,6 +1076,38 @@
     &:focus-visible {
       outline: 1px solid var(--color_green_500);
       border-radius: 8px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .footer {
+    padding: 80px 20px 20px;
+
+    &-links  {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    &-top {
+      margin-bottom: 20px;
+    }
+
+    &-info {
+      .right, .left {
+        min-width: 100%;
+      }
+    }
+
+    &-bottom {
+      padding-top: 17px;
+    }
+
+    &-privacy {
+      gap: 12px;
     }
   }
 }
