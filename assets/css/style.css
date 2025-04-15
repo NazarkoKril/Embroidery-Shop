@@ -887,6 +887,28 @@
   border-radius: 8px;
 }
 
+@media (max-width: 800px) {
+  .footer {
+    padding: 80px 20px 20px;
+  }
+  .footer-links {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .footer-top {
+    margin-bottom: 20px;
+  }
+  .footer-info .right, .footer-info .left {
+    min-width: 100%;
+  }
+  .footer-bottom {
+    padding-top: 17px;
+  }
+  .footer-privacy {
+    gap: 12px;
+  }
+}
 .faq-section {
   padding: 100px 0;
 }
@@ -970,25 +992,66 @@
   padding-top: 12px;
 }
 
-@media (max-width: 800px) {
-  .footer {
-    padding: 80px 20px 20px;
-  }
-  .footer-links {
-    margin-bottom: 40px;
-  }
+.pack-card {
+  max-width: 447px;
+  min-width: 320px;
+  border-radius: 20px;
+  overflow: hidden;
+  flex: 1;
+  position: relative;
 }
-@media (max-width: 500px) {
-  .footer-top {
-    margin-bottom: 20px;
-  }
-  .footer-info .right, .footer-info .left {
-    min-width: 100%;
-  }
-  .footer-bottom {
-    padding-top: 17px;
-  }
-  .footer-privacy {
-    gap: 12px;
-  }
+.pack-card-photo {
+  height: 276px;
+  width: 100%;
+  background-color: rgba(16, 16, 16, 0.1019607843);
+}
+.pack-card-photo img {
+  height: 100%;
+  object-fit: cover;
+}
+.pack-card-info {
+  background-color: var(--color_pure_400);
+  padding: 28px;
+}
+.pack-card-info h4 {
+  margin-bottom: 25px;
+}
+.pack-card-info .quantity-controls {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 99px;
+  padding: 4px;
+  gap: 8px;
+  border: 1px solid rgba(16, 16, 16, 0.1019607843);
+  margin-bottom: 25px;
+}
+.pack-card-info .quantity-controls .quantity {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -1%;
+  text-align: center;
+}
+.pack-card-info-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pack-card-info-price {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.pack-card-info-price .cross {
+  color: rgba(16, 16, 16, 0.5019607843);
+  text-decoration: line-through;
+}
+.pack-card-sale {
+  background-color: var(--color_red_400);
+  padding: 2px 8px;
+  color: var(--color_white);
+  position: absolute;
+  top: 28px;
+  left: 28px;
+  border-radius: 99px;
 }
