@@ -429,6 +429,10 @@
   }
 }
 
+.break {
+  display: none;
+}
+
 .services-section {
   padding: 100px 0; 
   background-color: var(--color_green_500);
@@ -984,7 +988,7 @@
       }
 
       .hero-title {
-        max-width: 250px;
+        max-width: 227px;
       }
 
       h1 {
@@ -1014,6 +1018,7 @@
   
         p {
           margin-bottom: 20px;
+          max-width: 235px;
         }
   
         h3 {
@@ -1024,6 +1029,10 @@
         }
       }
     }
+  }
+
+  .break {
+    display: inline;
   }
 
   .services-section {

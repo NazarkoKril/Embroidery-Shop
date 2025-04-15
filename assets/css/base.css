@@ -104,6 +104,7 @@
   padding: 10px 16px;
   transition: var(--trans);
   height: fit-content;
+  cursor: pointer;
 }
 .black-btn .btn-icon {
   height: 20px;
@@ -135,6 +136,7 @@
   padding: 10px 16px;
   transition: var(--trans);
   height: fit-content;
+  cursor: pointer;
 }
 .stroke-b-btn .btn-icon {
   height: 20px;
@@ -173,6 +175,7 @@
   padding: 10px 16px;
   transition: var(--trans);
   height: fit-content;
+  cursor: pointer;
 }
 .white-btn .btn-icon {
   height: 20px;
@@ -211,6 +214,7 @@
   padding: 10px 16px;
   transition: var(--trans);
   height: fit-content;
+  cursor: pointer;
 }
 .stroke-g-btn .btn-icon {
   height: 20px;
@@ -247,6 +251,7 @@
   padding: 10px 16px;
   transition: var(--trans);
   height: fit-content;
+  cursor: pointer;
 }
 .green-btn .btn-icon {
   height: 20px;
@@ -275,6 +280,7 @@
   justify-content: center;
   align-items: center;
   transition: var(--trans);
+  cursor: pointer;
 }
 .gray-btn .btn-icon {
   height: 20px;
