@@ -220,10 +220,8 @@
 }
 .hero-section .left img {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
 }
 .hero-section .right {
   background-color: var(--color_pure_400);
@@ -283,10 +281,8 @@
 }
 .point-section .point-block .right img {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
 }
 
 .small-advantages {
@@ -301,8 +297,7 @@
   padding-right: 16px;
   align-items: center;
   background-color: var(--color_white);
-  border-radius: 99px;
-  width: -moz-fit-content;
+  border-radius: 22px;
   width: fit-content;
 }
 .small-advantages-item img {
@@ -355,10 +350,8 @@
 }
 .gen-card-img {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
 }
 .gen-card-info {
   padding: 28px;
@@ -413,7 +406,7 @@
 }
 .advantages-section .advantages-info .advantages-item-text {
   color: var(--color_black);
-  max-width: 487px;
+  max-width: 500px;
 }
 .advantages-section .advantages-info .advantages-item-text h4 {
   margin-bottom: 12px;
@@ -464,10 +457,8 @@
 }
 .bestsellers-section .bestsellers-info .bestsellers-card-head img {
   height: 100%;
-  -o-object-position: center;
-     object-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-position: center;
+  object-fit: cover;
 }
 .bestsellers-section .bestsellers-info .bestsellers-card button {
   position: absolute;
@@ -506,7 +497,6 @@
 }
 .reviews-section .swiper-button-prev, .reviews-section .swiper-button-next {
   position: unset;
-  width: -moz-fit-content;
   width: fit-content;
   margin-top: 0;
 }
@@ -574,7 +564,7 @@
   margin-bottom: 24px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1160px) {
   .advantages-item {
     height: 150px;
   }
@@ -779,7 +769,6 @@
   display: block;
   margin-bottom: 8px;
   position: relative;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .footer-links-item a::before {
@@ -822,7 +811,6 @@
   display: flex;
   align-items: center;
   position: relative;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .footer-info .right a::before {
@@ -899,6 +887,89 @@
   border-radius: 8px;
 }
 
+.faq-section {
+  padding: 100px 0;
+}
+.faq-section .faq-container {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+}
+.faq-section .faq-container .left, .faq-section .faq-container .right {
+  flex: 1;
+}
+.faq-section .faq-container .left p {
+  margin-bottom: 24px;
+  color: var(--color_green_500);
+}
+.faq-section .faq-container .left h2 {
+  color: var(--color_black);
+}
+.faq-section .faq-container .faq-item {
+  padding: 28px 0;
+  border-bottom: 1px solid rgba(16, 16, 16, 0.2);
+  color: var(--color_black);
+  transition: var(--color_black);
+  overflow: hidden;
+}
+.faq-section .faq-container .faq-item-header input {
+  display: none;
+}
+.faq-section .faq-container .faq-item-header label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.faq-section .faq-container .faq-item-header label svg {
+  transition: var(--trans);
+}
+.faq-section .faq-container .faq-item-header:has(#drop1:checked) svg {
+  transform: rotate(180deg);
+}
+.faq-section .faq-container .faq-item-header:has(#drop1:checked) ~ #content1 {
+  max-height: 90px;
+}
+.faq-section .faq-container .faq-item-header:has(#drop2:checked) svg {
+  transform: rotate(180deg);
+}
+.faq-section .faq-container .faq-item-header:has(#drop2:checked) ~ #content2 {
+  max-height: 90px;
+}
+.faq-section .faq-container .faq-item-header:has(#drop3:checked) svg {
+  transform: rotate(180deg);
+}
+.faq-section .faq-container .faq-item-header:has(#drop3:checked) ~ #content3 {
+  max-height: 90px;
+}
+.faq-section .faq-container .faq-item-header:has(#drop4:checked) svg {
+  transform: rotate(180deg);
+}
+.faq-section .faq-container .faq-item-header:has(#drop4:checked) ~ #content4 {
+  max-height: 90px;
+}
+.faq-section .faq-container .faq-item-header:has(#drop5:checked) svg {
+  transform: rotate(180deg);
+}
+.faq-section .faq-container .faq-item-header:has(#drop5:checked) ~ #content5 {
+  max-height: 90px;
+}
+.faq-section .faq-container .faq-item-header:has(#drop6:checked) svg {
+  transform: rotate(180deg);
+}
+.faq-section .faq-container .faq-item-header:has(#drop6:checked) ~ #content6 {
+  max-height: 90px;
+}
+.faq-section .faq-container .faq-item-info {
+  max-height: 0;
+  overflow: hidden;
+  margin-right: 60px;
+  transition: var(--trans);
+}
+.faq-section .faq-container .faq-item-info p {
+  padding-top: 12px;
+}
+
 @media (max-width: 800px) {
   .footer {
     padding: 80px 20px 20px;
@@ -920,4 +991,4 @@
   .footer-privacy {
     gap: 12px;
   }
-}/*# sourceMappingURL=style.css.map */
+}

@@ -4,7 +4,7 @@
             <div class="header-info">
                 <div class="header-left">
                     <a href="./" class="logo">
-                        <img src="./assets/img/logo36.svg" alt="logo">
+                        <img src="/assets/img/logo36.svg" alt="logo">
                     </a>
                     <div class="header-line"></div>
                     <nav>

@@ -346,7 +346,7 @@
     padding-right: 16px;
     align-items: center;
     background-color: var(--color_white);
-    border-radius: 99px;
+    border-radius: 22px;
     width: fit-content;
 
     img {
@@ -475,7 +475,7 @@
 
       &-text {
         color: var(--color_black);
-        max-width: 487px;
+        max-width: 500px;
 
         h4 {
           margin-bottom: 12px;
@@ -669,7 +669,7 @@
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1160px) {
   .advantages-item {
     height: 150px;
   }
@@ -1076,6 +1076,80 @@
     &:focus-visible {
       outline: 1px solid var(--color_green_500);
       border-radius: 8px;
+    }
+  }
+}
+
+.faq-section {
+  padding: 100px 0;
+
+  .faq-container {
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+
+    .left, .right {
+      flex: 1;
+    }
+
+    .left {
+      p {
+        margin-bottom: 24px;
+        color: var(--color_green_500);
+      }
+
+      h2 {
+        color: var(--color_black);
+      }
+    }
+
+    .faq-item {
+      padding: 28px 0;
+      border-bottom: 1px solid #10101033;
+      color: var(--color_black);
+      transition: var(--color_black);
+      overflow: hidden;
+
+      &-header {
+        input {
+          display: none;
+        }
+
+        label {
+          display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+        svg {
+          transition: var(--trans);
+        }
+        }
+
+        @for $i from 1 through 6 {
+          &:has(#drop#{$i}:checked) {
+            svg {
+              transform: rotate(180deg);
+            }
+
+            & ~ #content#{$i} {
+              max-height: 90px;
+            }
+          }
+          
+        }
+      }
+
+      &-info {
+        max-height: 0;
+        overflow: hidden;
+        margin-right: 60px;
+        transition: var(--trans);
+
+        p {
+          padding-top: 12px;
+        }
+      }
     }
   }
 }
