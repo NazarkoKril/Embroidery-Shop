@@ -9,7 +9,7 @@
                     <div class="header-line"></div>
                     <nav>
                         <ul class="header-list">
-                            <li class="header-item"><a href="./page/service.html" class="header-link text-body-medium">Services</a></li>
+                            <li class="header-item services-link"><a href="./page/service.html" class="header-link text-body-medium">Services</a></li>
                             <li class="header-item"><a href="./page/portfolio.html" class="header-link text-body-medium">Portfolio</a></li>
                             <li class="header-item"><a href="./page/about.html" class="header-link text-body-medium">About</a></li>
                             <li class="header-item"><a href="./page/contact.html" class="header-link text-body-medium">Contact</a></li>
@@ -48,6 +48,50 @@
                         </a>
                     </div>
                 </div>        
+            </div>
+        </div>
+
+        <div class="header-dropdown">
+            <div class="header-dropdown-container">
+                <a href="/page/servicePage.html" class="header-dropdown-item">
+                    <div class="header-dropdown-item-photo">
+                        <img src="../assets/img/service1.png" alt="service1">
+                    </div>
+                    <div class="header-dropdown-item-info">
+                        <p>Screen printing</p>
+                        <button class="stroke-b-btn">
+                            <svg class="btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.627 12.75H4.5V11.25H16.627L10.9308 5.55375L12 4.5L19.5 12L12 19.5L10.9308 18.4462L16.627 12.75Z" fill="#101010"/>
+                            </svg>
+                        </button>
+                    </div>
+                </a>
+                <a href="/page/servicePage.html" class="header-dropdown-item">
+                    <div class="header-dropdown-item-photo">
+                        <img src="../assets/img/service1.png" alt="service1">
+                    </div>
+                    <div class="header-dropdown-item-info">
+                        <p>Screen printing</p>
+                        <button class="stroke-b-btn">
+                            <svg class="btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.627 12.75H4.5V11.25H16.627L10.9308 5.55375L12 4.5L19.5 12L12 19.5L10.9308 18.4462L16.627 12.75Z" fill="#101010"/>
+                            </svg>
+                        </button>
+                    </div>
+                </a>
+                <a href="/page/servicePage.html" class="header-dropdown-item">
+                    <div class="header-dropdown-item-photo">
+                        <img src="../assets/img/service1.png" alt="service1">
+                    </div>
+                    <div class="header-dropdown-item-info">
+                        <p>Screen printing</p>
+                        <button class="stroke-b-btn">
+                            <svg class="btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.627 12.75H4.5V11.25H16.627L10.9308 5.55375L12 4.5L19.5 12L12 19.5L10.9308 18.4462L16.627 12.75Z" fill="#101010"/>
+                            </svg>
+                        </button>
+                    </div>
+                </a>
             </div>
         </div>
         
