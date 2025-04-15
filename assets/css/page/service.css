@@ -1,7 +1,3 @@
-.break {
-  display: none;
-}
-
 .types-section {
   padding: 100px 0;
   background-color: var(--color_pure_400);
@@ -105,8 +101,13 @@
 .advice-section .advice-info table td, .advice-section .advice-info table th {
   padding: 8px 12px;
   border: 1px solid rgba(255, 255, 255, 0.0509803922);
-  width: 336px;
   white-space: nowrap;
+}
+.advice-section .advice-info table td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 336px;
+  width: 336px;
 }
 .advice-section .advice-info table thead {
   background-color: rgba(255, 255, 255, 0.1019607843);
@@ -213,9 +214,6 @@
   }
 }
 @media (max-width: 500px) {
-  .break {
-    display: inline;
-  }
   .types-section h2 {
     font-weight: 400;
     font-size: 32px;
@@ -261,8 +259,13 @@
   .advice-section .advice-info table {
     width: fit-content;
   }
-  .advice-section .advice-info table td, .advice-section .advice-info table th {
-    width: fit-content;
+  .advice-section .advice-info table td:first-of-type {
+    width: 140px;
+    max-width: 140px;
+  }
+  .advice-section .advice-info table td:last-of-type {
+    width: 200px;
+    max-width: 200px;
   }
   .advice-section .advice-info table thead th {
     font-weight: 500;
@@ -275,6 +278,9 @@
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 0%;
+  }
+  .advice-section .advice-info table tbody th {
+    width: 180px;
   }
   .sizes-section .sizes-top {
     margin-bottom: 32px;
