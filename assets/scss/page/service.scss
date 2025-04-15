@@ -1,3 +1,7 @@
+.break {
+    display: none;
+}
+
 .types-section {
     padding: 100px 0;
     background-color: var(--color_pure_400);
@@ -37,6 +41,7 @@
           height: 500px;
           padding: 0 28px;
           max-width: calc((100% - 20px) / 3);
+          min-width: 300px;
 
           &-title {
             margin-bottom: 24px;
@@ -94,6 +99,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        gap: 32px;
 
         .advice-table {
             overflow-x: auto;
@@ -115,7 +121,6 @@
             td, th {
                 padding: 8px 12px;
                 border: 1px solid #FFFFFF0D;
-                width: max-content;
                 width: 336px;
                 white-space: nowrap;
             }
@@ -137,8 +142,8 @@
         }
 
         p {
-            max-width: 416px;
-            flex-shrink: 2;
+            flex: 1;
+            min-width: 320px;
         }
     }
 }
@@ -208,4 +213,156 @@
 
 .faq-section {
     background-color: var(--color_pure_400);
+}
+
+@media (max-width: 900px) {
+    .types-section {
+        .types-item {
+            flex-direction: column-reverse;
+
+            &-photo {
+                flex-direction: column;
+
+                .photo {
+                    height: 400px;
+                }
+            }
+
+            &-info {
+                min-width: 100%;
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .types-section {
+        padding: 80px 0;
+    }
+
+    .deals-section {
+        padding: 80px 0;
+    }
+
+    .advice-section {
+        padding: 80px 0;
+    }
+
+    .sizes-section {
+        padding: 80px 0;
+
+        .sizes-top {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .break {
+        display: inline;
+    }
+
+    .types-section {
+        h2 {
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 38px;
+            letter-spacing: -0.75px;
+            margin-bottom: 0;
+        }
+
+        .types-item {
+            margin-top: 32px;
+
+            &-photo {
+                .photo {
+                    height: 300px;
+                }
+            }
+
+            &-info {
+                &-title {
+                    margin-bottom: 20px;
+                }
+
+                h4 {
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 28px;
+                    letter-spacing: -0.75px;
+                }
+            }
+        }
+    }
+
+    .deals-section {
+        h2 {
+            margin-bottom: 20px;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 38px;
+            letter-spacing: -0.75px;
+        }
+
+        .deals-info {
+            margin-bottom: 32px;
+        }
+    }
+
+    .advice-section {
+        .advice-title {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-bottom: 32px;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 38px;
+            letter-spacing: -0.75px;
+        }
+
+        .advice-info {
+            table {
+                width: fit-content;
+    
+                td, th {
+                    width: fit-content;
+                }
+
+                thead th {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: -0.25px;
+                }
+
+                tbody {
+                    th, td {
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 18px;
+                        letter-spacing: 0%;
+                    }
+                }
+            }
+        }
+    }
+
+    .sizes-section {
+        .sizes-top {
+            margin-bottom: 32px;
+        }
+
+        .sizes-head {
+            h2 {
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 38px;
+                letter-spacing: -0.75px;
+                margin-bottom: 12px;
+            }
+        }
+    }
 }

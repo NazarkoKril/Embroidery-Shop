@@ -669,9 +669,165 @@
   }
 }
 
+.faq-section {
+  padding: 100px 0;
+
+  .faq-container {
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+
+    .left, .right {
+      flex: 1;
+    }
+
+    .left {
+      p {
+        margin-bottom: 24px;
+        color: var(--color_green_500);
+      }
+
+      h2 {
+        color: var(--color_black);
+      }
+    }
+
+    .faq-item {
+      padding: 28px 0;
+      border-bottom: 1px solid #10101033;
+      color: var(--color_black);
+      transition: var(--color_black);
+      overflow: hidden;
+
+      &-header {
+        input {
+          display: none;
+        }
+
+        label {
+          display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+        svg {
+          transition: var(--trans);
+        }
+        }
+
+        @for $i from 1 through 6 {
+          &:has(#drop#{$i}:checked) {
+            svg {
+              transform: rotate(180deg);
+            }
+
+            & ~ #content#{$i} {
+              max-height: 90px;
+            }
+          }
+          
+        }
+      }
+
+      &-info {
+        max-height: 0;
+        overflow: hidden;
+        margin-right: 60px;
+        transition: var(--trans);
+
+        p {
+          padding-top: 12px;
+        }
+      }
+    }
+  }
+}
+
+.pack-card {
+  max-width: 447px;
+  min-width: 320px;
+  border-radius: 20px;
+  overflow: hidden;
+  flex: 1;
+  position: relative;
+
+  &-photo {
+      height: 276px;
+      width: 100%;
+      background-color: #1010101A;
+
+      img {
+          height: 100%;
+          object-fit: cover;
+      }
+  }
+
+  &-info {
+      background-color: var(--color_pure_400);
+      padding: 28px;
+
+      h4 {
+          margin-bottom: 25px;
+      }
+
+      .quantity-controls {
+          display: inline-flex;
+          align-items: center;
+          border-radius: 99px;
+          padding: 4px;
+          gap: 8px;
+          border: 1px solid #1010101A;
+          margin-bottom: 25px;
+
+          .quantity {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 150%;
+              letter-spacing: -1%;
+              text-align: center;
+          }
+      }
+
+      &-bottom {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+
+      &-price {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+
+          .cross {
+              color: #10101080;
+              text-decoration: line-through;
+          }
+      }
+  }
+
+  &-sale {
+      background-color: var(--color_red_400);
+      padding: 2px 8px;
+      color: var(--color_white);
+      position: absolute;
+      top: 28px;
+      left: 28px;
+      border-radius: 99px;
+  }
+}
+
 @media (max-width: 1160px) {
   .advantages-item {
     height: 150px;
+  }
+}
+
+@media (max-width: 900px) {
+  .faq-section {
+    .faq-container {
+      flex-direction: column;
+    }
   }
 }
 
@@ -713,6 +869,10 @@
   }
 
   .swiper {
+    padding: 80px 0;
+  }
+
+  .faq-section {
     padding: 80px 0;
   }
 }
@@ -882,6 +1042,44 @@
       line-height: 48px;
       letter-spacing: -1px;
       max-width: 289px;
+    }
+  }
+
+  .faq-section {
+    .faq-container {
+      .left {
+        p {
+          margin-bottom: 20px;
+        }
+
+        h2 {
+          font-weight: 400;
+          font-size: 32px;
+          line-height: 38px;
+          letter-spacing: -0.75px;
+        }
+      }
+
+      .faq-item {
+        padding: 20px 0;
+
+        &-header {
+          label {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.15px;
+          }
+
+          @for $i from 1 through 6 {
+            &:has(#drop#{$i}:checked) {  
+              & ~ #content#{$i} {
+                max-height: 156px;
+              }
+            }            
+          }
+        }
+      }
     }
   }
 }
@@ -1110,153 +1308,5 @@
     &-privacy {
       gap: 12px;
     }
-  }
-}
-
-.faq-section {
-  padding: 100px 0;
-
-  .faq-container {
-    display: flex;
-    gap: 32px;
-    justify-content: space-between;
-
-    .left, .right {
-      flex: 1;
-    }
-
-    .left {
-      p {
-        margin-bottom: 24px;
-        color: var(--color_green_500);
-      }
-
-      h2 {
-        color: var(--color_black);
-      }
-    }
-
-    .faq-item {
-      padding: 28px 0;
-      border-bottom: 1px solid #10101033;
-      color: var(--color_black);
-      transition: var(--color_black);
-      overflow: hidden;
-
-      &-header {
-        input {
-          display: none;
-        }
-
-        label {
-          display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 20px;
-
-        svg {
-          transition: var(--trans);
-        }
-        }
-
-        @for $i from 1 through 6 {
-          &:has(#drop#{$i}:checked) {
-            svg {
-              transform: rotate(180deg);
-            }
-
-            & ~ #content#{$i} {
-              max-height: 90px;
-            }
-          }
-          
-        }
-      }
-
-      &-info {
-        max-height: 0;
-        overflow: hidden;
-        margin-right: 60px;
-        transition: var(--trans);
-
-        p {
-          padding-top: 12px;
-        }
-      }
-    }
-  }
-}
-
-.pack-card {
-  max-width: 447px;
-  min-width: 320px;
-  border-radius: 20px;
-  overflow: hidden;
-  flex: 1;
-  position: relative;
-
-  &-photo {
-      height: 276px;
-      width: 100%;
-      background-color: #1010101A;
-
-      img {
-          height: 100%;
-          object-fit: cover;
-      }
-  }
-
-  &-info {
-      background-color: var(--color_pure_400);
-      padding: 28px;
-
-      h4 {
-          margin-bottom: 25px;
-      }
-
-      .quantity-controls {
-          display: inline-flex;
-          align-items: center;
-          border-radius: 99px;
-          padding: 4px;
-          gap: 8px;
-          border: 1px solid #1010101A;
-          margin-bottom: 25px;
-
-          .quantity {
-              font-weight: 400;
-              font-size: 16px;
-              line-height: 150%;
-              letter-spacing: -1%;
-              text-align: center;
-          }
-      }
-
-      &-bottom {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-      }
-
-      &-price {
-          display: flex;
-          align-items: center;
-          gap: 4px;
-
-          .cross {
-              color: #10101080;
-              text-decoration: line-through;
-          }
-      }
-  }
-
-  &-sale {
-      background-color: var(--color_red_400);
-      padding: 2px 8px;
-      color: var(--color_white);
-      position: absolute;
-      top: 28px;
-      left: 28px;
-      border-radius: 99px;
   }
 }
