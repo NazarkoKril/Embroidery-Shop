@@ -377,25 +377,44 @@
     display: flex;
     overflow: hidden;
 
+    &.reverse {
+      flex-direction: row-reverse;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
     .left, .right {
       flex: 1;
     }
 
     .left {
       background-color: var(--color_pure_400);
+    }
+
+    .point-container {
       padding: 40px;
     }
 
     .point-info {
-      margin-bottom: 138px;
-
-      p {
+      >p {
         margin-bottom: 24px;
         color: var(--color_green_500);
       }
 
       h3 {
         color: var(--color_black);
+      }
+    }
+
+    .point-text {
+      color: var(--color_black);
+      margin-top: 40px;
+      max-width: 467px;
+
+      p:not(:last-child) {
+        margin-bottom: 16px;
       }
     }
 
@@ -411,6 +430,7 @@
   display: flex;
   flex-direction: column;
   gap: 7px;
+  margin-top: 138px;
 
   &-item {
     display: flex;
@@ -921,7 +941,7 @@
     padding: 80px 0;
 
     .point-block {
-      flex-direction: column;
+      flex-direction: column !important;
     }
   }
 
@@ -1010,13 +1030,14 @@
     }
 
     .point-block {
-      .left {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+      .point-container {
         padding: 40px 20px;
       }
       .point-info {
-        margin-bottom: 60px;
-  
-        p {
+        >p {
           margin-bottom: 20px;
           max-width: 235px;
         }
@@ -1027,6 +1048,14 @@
           line-height: 28px;
           letter-spacing: -0.75px;
         }
+      }
+
+      .point-text {
+        margin-top: 32px;
+      }
+
+      .small-advantages {
+        margin-top: 60px;
       }
     }
   }

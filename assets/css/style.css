@@ -324,22 +324,35 @@
   display: flex;
   overflow: hidden;
 }
+.point-section .point-block.reverse {
+  flex-direction: row-reverse;
+}
+.point-section .point-block:not(:last-child) {
+  margin-bottom: 32px;
+}
 .point-section .point-block .left, .point-section .point-block .right {
   flex: 1;
 }
 .point-section .point-block .left {
   background-color: var(--color_pure_400);
+}
+.point-section .point-block .point-container {
   padding: 40px;
 }
-.point-section .point-block .point-info {
-  margin-bottom: 138px;
-}
-.point-section .point-block .point-info p {
+.point-section .point-block .point-info > p {
   margin-bottom: 24px;
   color: var(--color_green_500);
 }
 .point-section .point-block .point-info h3 {
   color: var(--color_black);
+}
+.point-section .point-block .point-text {
+  color: var(--color_black);
+  margin-top: 40px;
+  max-width: 467px;
+}
+.point-section .point-block .point-text p:not(:last-child) {
+  margin-bottom: 16px;
 }
 .point-section .point-block .right img {
   height: 100%;
@@ -351,6 +364,7 @@
   display: flex;
   flex-direction: column;
   gap: 7px;
+  margin-top: 138px;
 }
 .small-advantages-item {
   display: flex;
@@ -798,7 +812,7 @@
     padding: 80px 0;
   }
   .point-section .point-block {
-    flex-direction: column;
+    flex-direction: column !important;
   }
   .services-section {
     padding: 80px 0;
@@ -863,13 +877,13 @@
     line-height: 38px;
     letter-spacing: -0.75px;
   }
-  .point-section .point-block .left {
+  .point-section .point-block:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .point-section .point-block .point-container {
     padding: 40px 20px;
   }
-  .point-section .point-block .point-info {
-    margin-bottom: 60px;
-  }
-  .point-section .point-block .point-info p {
+  .point-section .point-block .point-info > p {
     margin-bottom: 20px;
     max-width: 235px;
   }
@@ -878,6 +892,12 @@
     font-size: 24px;
     line-height: 28px;
     letter-spacing: -0.75px;
+  }
+  .point-section .point-block .point-text {
+    margin-top: 32px;
+  }
+  .point-section .point-block .small-advantages {
+    margin-top: 60px;
   }
   .break {
     display: inline;
