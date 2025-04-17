@@ -53,9 +53,9 @@
 
         <div class="header-dropdown">
             <div class="header-dropdown-container">
-                <a href="/page/servicePage.html" class="header-dropdown-item">
+                <a href="./page/servicePage.html" class="header-dropdown-item">
                     <div class="header-dropdown-item-photo">
-                        <img src="../assets/img/service1.png" alt="service1">
+                        <img src="./assets/img/service1.png" alt="service1">
                     </div>
                     <div class="header-dropdown-item-info">
                         <p>Screen printing</p>
@@ -66,9 +66,9 @@
                         </button>
                     </div>
                 </a>
-                <a href="/page/servicePage.html" class="header-dropdown-item">
+                <a href="./page/servicePage.html" class="header-dropdown-item">
                     <div class="header-dropdown-item-photo">
-                        <img src="../assets/img/service1.png" alt="service1">
+                        <img src="./assets/img/service1.png" alt="service1">
                     </div>
                     <div class="header-dropdown-item-info">
                         <p>Screen printing</p>
@@ -79,9 +79,9 @@
                         </button>
                     </div>
                 </a>
-                <a href="/page/servicePage.html" class="header-dropdown-item">
+                <a href="./page/servicePage.html" class="header-dropdown-item">
                     <div class="header-dropdown-item-photo">
-                        <img src="../assets/img/service1.png" alt="service1">
+                        <img src="./assets/img/service1.png" alt="service1">
                     </div>
                     <div class="header-dropdown-item-info">
                         <p>Screen printing</p>
