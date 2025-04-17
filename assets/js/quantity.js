@@ -4,6 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const plusBtn = control.querySelector(".plus");
         const quantitySpan = control.querySelector(".quantity");
 
+        control.addEventListener("click", function(e) {
+            e.stopPropagation();
+            e.preventDefault();
+        })
+
         minusBtn.addEventListener("click", function () {
             let currentValue = parseInt(quantitySpan.textContent, 10);
             if (currentValue > 1) {
