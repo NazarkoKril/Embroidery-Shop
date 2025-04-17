@@ -729,11 +729,13 @@
 
 .pack-card {
   max-width: 447px;
-  min-width: 320px;
+  min-width: 335px;
   border-radius: 20px;
   overflow: hidden;
   flex: 1;
   position: relative;
+  display: block;
+  color: var(--color_black);
 }
 .pack-card-photo {
   height: 276px;
@@ -791,6 +793,27 @@
   border-radius: 99px;
 }
 
+.deals-section {
+  padding: 100px 0;
+  color: var(--color_black);
+}
+.deals-section h2 {
+  margin-bottom: 24px;
+}
+.deals-section .deals-info {
+  max-width: 500px;
+  margin-bottom: 60px;
+}
+.deals-section h5 {
+  margin-bottom: 24px;
+}
+.deals-section .deals-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px 10px;
+}
+
 @media (max-width: 1160px) {
   .advantages-item {
     height: 150px;
@@ -833,6 +856,9 @@
     padding: 80px 0;
   }
   .faq-section {
+    padding: 80px 0;
+  }
+  .deals-section {
     padding: 80px 0;
   }
 }
@@ -1002,6 +1028,16 @@
   }
   .faq-section .faq-container .faq-item-header:has(#drop6:checked) ~ #content6 {
     max-height: 156px;
+  }
+  .deals-section h2 {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.75px;
+  }
+  .deals-section .deals-info {
+    margin-bottom: 32px;
   }
 }
 .footer {
