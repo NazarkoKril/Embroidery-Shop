@@ -870,21 +870,7 @@
       }
 
       .quantity-controls {
-          display: inline-flex;
-          align-items: center;
-          border-radius: 99px;
-          padding: 4px;
-          gap: 8px;
-          border: 1px solid #1010101A;
           margin-bottom: 25px;
-
-          .quantity {
-              font-weight: 400;
-              font-size: 16px;
-              line-height: 150%;
-              letter-spacing: -1%;
-              text-align: center;
-          }
       }
 
       &-bottom {
@@ -913,6 +899,24 @@
       top: 28px;
       left: 28px;
       border-radius: 99px;
+  }
+}
+
+.quantity-controls {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 99px;
+  padding: 4px;
+  gap: 8px;
+  border: 1px solid #1010101A;
+
+  .quantity {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: -1%;
+      text-align: center;
+      min-width: 35px;
   }
 }
 
