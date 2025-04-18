@@ -56,7 +56,11 @@
                 <a href="./page/servicePage.html" class="header-dropdown-item">
                     <div class="header-dropdown-item-photo">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                         <img src="./assets/img/service1.png" alt="service1">
+=======
+                        <img src="/assets/img/service1.png" alt="service1">
+>>>>>>> Stashed changes
 =======
                         <img src="/assets/img/service1.png" alt="service1">
 >>>>>>> Stashed changes
@@ -73,7 +77,11 @@
                 <a href="./page/servicePage.html" class="header-dropdown-item">
                     <div class="header-dropdown-item-photo">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                         <img src="./assets/img/service1.png" alt="service1">
+=======
+                        <img src="/assets/img/service1.png" alt="service1">
+>>>>>>> Stashed changes
 =======
                         <img src="/assets/img/service1.png" alt="service1">
 >>>>>>> Stashed changes
@@ -90,7 +98,11 @@
                 <a href="./page/servicePage.html" class="header-dropdown-item">
                     <div class="header-dropdown-item-photo">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                         <img src="./assets/img/service1.png" alt="service1">
+=======
+                        <img src="/assets/img/service1.png" alt="service1">
+>>>>>>> Stashed changes
 =======
                         <img src="/assets/img/service1.png" alt="service1">
 >>>>>>> Stashed changes
