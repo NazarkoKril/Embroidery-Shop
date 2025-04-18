@@ -3,28 +3,28 @@
         <div class="header-container">
             <div class="header-info">
                 <div class="header-left">
-                    <a href="./" class="logo">
-                        <img src="./assets/img/logo36.svg" alt="logo">
+                    <a href="/" class="logo">
+                        <img src="/assets/img/logo36.svg" alt="logo">
                     </a>
                     <div class="header-line"></div>
                     <nav>
                         <ul class="header-list">
-                            <li class="header-item services-link"><a href="./page/service.html" class="header-link text-body-medium">Services</a></li>
-                            <li class="header-item"><a href="./page/portfolio.html" class="header-link text-body-medium">Portfolio</a></li>
-                            <li class="header-item"><a href="./page/about.html" class="header-link text-body-medium">About</a></li>
-                            <li class="header-item"><a href="./page/contact.html" class="header-link text-body-medium">Contact</a></li>
-                            <li class="header-item"><a href="./page/blog.html" class="header-link text-body-medium">Blog</a></li>
+                            <li class="header-item services-link"><a href="/page/service.html" class="header-link text-body-medium">Services</a></li>
+                            <li class="header-item"><a href="/page/portfolio.html" class="header-link text-body-medium">Portfolio</a></li>
+                            <li class="header-item"><a href="/page/about.html" class="header-link text-body-medium">About</a></li>
+                            <li class="header-item"><a href="/page/contact.html" class="header-link text-body-medium">Contact</a></li>
+                            <li class="header-item"><a href="/page/blog.html" class="header-link text-body-medium">Blog</a></li>
                         </ul>
                         <div class="header-line"></div>
                         <div class="header-item count">
-                            <a href="./page/cart.html" class="header-link text-body-medium">
+                            <a href="/page/cart.html" class="header-link text-body-medium">
                                 Cart <span class="header-cart-count">(99)</span>
                             </a>
                         </div>
                     </nav>
                 </div>
                 <div class="header-right">
-                    <a href="./page/form.html" class="black-btn text-label-medium">Contact</a>
+                    <a href="/page/form.html" class="black-btn text-label-medium">Contact</a>
                     <div class="burger-icon">
                         <div class="line1"></div>
                         <div class="line2"></div>
@@ -35,15 +35,15 @@
             <div class="burger-menu">
                 <div class="burger-container">
                     <ul class="header-list">
-                        <li class="header-item"><a href="./page/service.html" class="header-link text-body-medium">Services</a></li>
-                        <li class="header-item"><a href="./page/portfolio.html" class="header-link text-body-medium">Portfolio</a></li>
-                        <li class="header-item"><a href="./page/about.html" class="header-link text-body-medium">About</a></li>
-                        <li class="header-item"><a href="./page/contact.html" class="header-link text-body-medium">Contact</a></li>
-                        <li class="header-item"><a href="./page/blog.html" class="header-link text-body-medium">Blog</a></li>
+                        <li class="header-item"><a href="/page/service.html" class="header-link text-body-medium">Services</a></li>
+                        <li class="header-item"><a href="/page/portfolio.html" class="header-link text-body-medium">Portfolio</a></li>
+                        <li class="header-item"><a href="/page/about.html" class="header-link text-body-medium">About</a></li>
+                        <li class="header-item"><a href="/page/contact.html" class="header-link text-body-medium">Contact</a></li>
+                        <li class="header-item"><a href="/page/blog.html" class="header-link text-body-medium">Blog</a></li>
                     </ul>
                     <div class="header-line"></div>
                     <div class="header-item count">
-                        <a href="./page/cart.html" class="header-link text-body-medium">
+                        <a href="/page/cart.html" class="header-link text-body-medium">
                             Cart <span class="header-cart-count">(99)</span>
                         </a>
                     </div>
@@ -55,7 +55,11 @@
             <div class="header-dropdown-container">
                 <a href="./page/servicePage.html" class="header-dropdown-item">
                     <div class="header-dropdown-item-photo">
+<<<<<<< Updated upstream
                         <img src="./assets/img/service1.png" alt="service1">
+=======
+                        <img src="/assets/img/service1.png" alt="service1">
+>>>>>>> Stashed changes
                     </div>
                     <div class="header-dropdown-item-info">
                         <p>Screen printing</p>
@@ -68,7 +72,11 @@
                 </a>
                 <a href="./page/servicePage.html" class="header-dropdown-item">
                     <div class="header-dropdown-item-photo">
+<<<<<<< Updated upstream
                         <img src="./assets/img/service1.png" alt="service1">
+=======
+                        <img src="/assets/img/service1.png" alt="service1">
+>>>>>>> Stashed changes
                     </div>
                     <div class="header-dropdown-item-info">
                         <p>Screen printing</p>
@@ -81,7 +89,11 @@
                 </a>
                 <a href="./page/servicePage.html" class="header-dropdown-item">
                     <div class="header-dropdown-item-photo">
+<<<<<<< Updated upstream
                         <img src="./assets/img/service1.png" alt="service1">
+=======
+                        <img src="/assets/img/service1.png" alt="service1">
+>>>>>>> Stashed changes
                     </div>
                     <div class="header-dropdown-item-info">
                         <p>Screen printing</p>
@@ -104,7 +116,7 @@
                 <li>
                     <div class="top">
                         <div class="image">
-                            <img src="./assets/img/candy/img1.png" alt="candy">
+                            <img src="/assets/img/candy/img1.png" alt="candy">
                         </div>
                         <p>Шоколадні цукерки "Молочне серце”</p>
                         <h4 class="price">45 ₴</h4>
@@ -119,7 +131,7 @@
                 <li>
                     <div class="top">
                         <div class="image">
-                            <img src="./assets/img/candy/img1.png" alt="candy">
+                            <img src="/assets/img/candy/img1.png" alt="candy">
                         </div>
                         <p>Шоколадні цукерки "Молочне серце”</p>
                         <h4 class="price">45 ₴</h4>
@@ -134,7 +146,7 @@
                 <li>
                     <div class="top">
                         <div class="image">
-                            <img src="./assets/img/candy/img1.png" alt="candy">
+                            <img src="/assets/img/candy/img1.png" alt="candy">
                         </div>
                         <p>Шоколадні цукерки "Молочне серце”</p>
                         <h4 class="price">45 ₴</h4>
@@ -149,7 +161,7 @@
                 <li>
                     <div class="top">
                         <div class="image">
-                            <img src="./assets/img/candy/img1.png" alt="candy">
+                            <img src="/assets/img/candy/img1.png" alt="candy">
                         </div>
                         <p>Шоколадні цукерки "Молочне серце”</p>
                         <h4 class="price">45 ₴</h4>
@@ -164,7 +176,7 @@
                 <li>
                     <div class="top">
                         <div class="image">
-                            <img src="./assets/img/candy/img1.png" alt="candy">
+                            <img src="/assets/img/candy/img1.png" alt="candy">
                         </div>
                         <p>Шоколадні цукерки "Молочне серце”</p>
                         <h4 class="price">45 ₴</h4>
@@ -179,7 +191,7 @@
                 <li>
                     <div class="top">
                         <div class="image">
-                            <img src="./assets/img/candy/img1.png" alt="candy">
+                            <img src="/assets/img/candy/img1.png" alt="candy">
                         </div>
                         <p>Шоколадні цукерки "Молочне серце”</p>
                         <h4 class="price">45 ₴</h4>
@@ -194,7 +206,7 @@
                 <li>
                     <div class="top">
                         <div class="image">
-                            <img src="./assets/img/candy/img1.png" alt="candy">
+                            <img src="/assets/img/candy/img1.png" alt="candy">
                         </div>
                         <p>Шоколадні цукерки "Молочне серце”</p>
                         <h4 class="price">45 ₴</h4>
@@ -212,7 +224,7 @@
                 <h5>До оплати без доставки</h5>
                 <h4 class="price result_price">45 ₴</h4>
             </div>
-            <a href="./page/cart.html" class="lite_btn">Оформити замовлення</a>
+            <a href="/page/cart.html" class="lite_btn">Оформити замовлення</a>
         </div>
     </header>
     `
