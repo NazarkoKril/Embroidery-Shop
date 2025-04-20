@@ -31,3 +31,24 @@ document.addEventListener('DOMContentLoaded', () => {
             },
         });
     });
+
+document.addEventListener('DOMContentLoaded', () => {
+       
+        const dropdownBtn = document.querySelector('#dropdown-btn');
+        const dropdown = document.querySelector('.header-dropdown');
+      
+        if (dropdownBtn && dropdown) {
+            dropdownBtn.addEventListener('click', () => {
+                dropdownBtn.classList.toggle('open');
+                dropdown.classList.toggle('open');
+            });
+        
+            document.addEventListener('click', (event) => {
+                if (!dropdown.contains(event.target) && !dropdownBtn.contains(event.target)) {
+                    dropdownBtn.classList.remove('open');
+                    dropdown.classList.remove('open');
+                }
+            });
+        }
+     
+});

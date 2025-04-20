@@ -35,7 +35,16 @@
             <div class="burger-menu">
                 <div class="burger-container">
                     <ul class="header-list">
-                        <li class="header-item"><a href="/page/service.html" class="header-link text-body-medium">Services</a></li>
+                        <li class="header-item services-link-burger"><a href="/page/service.html" class="header-link text-body-medium">Services</a>
+                            <svg id="dropdown-btn" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0_193_13803" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                                <rect width="24" height="24" fill="#D9D9D9"/>
+                                </mask>
+                                <g mask="url(#mask0_193_13803)">
+                                <path d="M11.9999 15.0538L6.34619 9.4L7.39994 8.34625L11.9999 12.9463L16.5999 8.34625L17.6537 9.4L11.9999 15.0538Z" fill="#101010"/>
+                                </g>
+                            </svg>
+                        </li>
                         <li class="header-item"><a href="/page/portfolio.html" class="header-link text-body-medium">Portfolio</a></li>
                         <li class="header-item"><a href="/page/about.html" class="header-link text-body-medium">About</a></li>
                         <li class="header-item"><a href="/page/contact.html" class="header-link text-body-medium">Contact</a></li>
