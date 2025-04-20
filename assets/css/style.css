@@ -565,24 +565,6 @@
 .reviews-section {
   background-color: var(--color_pure_400);
 }
-.reviews-section .swiper {
-  padding: 100px 0;
-}
-.reviews-section .swiper-wrapper {
-  width: 100%;
-  margin-left: 40px;
-}
-.reviews-section .swiper-slide {
-  width: 447px;
-}
-.reviews-section .swiper-button-prev, .reviews-section .swiper-button-next {
-  position: unset;
-  width: fit-content;
-  margin-top: 0;
-}
-.reviews-section .swiper-button-prev::after, .reviews-section .swiper-button-next::after {
-  content: none;
-}
 .reviews-section .reviews-head {
   margin-bottom: 60px;
   display: flex;
@@ -592,6 +574,25 @@
 }
 .reviews-section .reviews-head h2 {
   color: var(--color_black);
+}
+
+.swiper {
+  padding: 100px 0;
+}
+.swiper-wrapper {
+  width: 100%;
+  margin-left: 40px;
+}
+.swiper-slide {
+  width: 447px;
+}
+.swiper-button-prev, .swiper-button-next {
+  position: unset;
+  width: fit-content;
+  margin-top: 0;
+}
+.swiper-button-prev::after, .swiper-button-next::after {
+  content: none;
 }
 
 .review-card {
@@ -818,6 +819,70 @@
   gap: 24px 10px;
 }
 
+.blog-card {
+  border-radius: 20px;
+  overflow: hidden;
+  width: 447px;
+  background-color: var(--color_red_400);
+  display: block;
+  transition: var(--trans);
+}
+.blog-card:nth-child(even) {
+  background-color: var(--color_pure_400);
+}
+.blog-card:nth-child(even):hover, .blog-card:nth-child(even):active {
+  background-color: var(--color_pure_500);
+}
+.blog-card:hover, .blog-card:active {
+  background-color: var(--color_red_500);
+}
+.blog-card:active {
+  transform: scale(0.9);
+}
+.blog-card:focus-visible {
+  outline: 1px solid var(--color_green_500);
+}
+.blog-card-photo {
+  width: 100%;
+  height: 279px;
+  background: url(../img/icons/digital-marketing_icom.svg) center/120px no-repeat, linear-gradient(rgba(16, 16, 16, 0.05), rgba(16, 16, 16, 0.05)), linear-gradient(white, white);
+}
+.blog-card-photo img {
+  height: 100%;
+  object-fit: cover;
+}
+.blog-card-info {
+  padding: 28px;
+}
+.blog-card-info-top {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 25px;
+  align-items: center;
+}
+.blog-card-info-top .date {
+  color: rgba(16, 16, 16, 0.5019607843);
+}
+.blog-card-info h4 {
+  color: var(--color_black);
+}
+
+.dot {
+  height: 4px;
+  width: 4px;
+  background-color: rgba(16, 16, 16, 0.2);
+  border-radius: 99px;
+}
+
+.tab, .tab-btn {
+  color: rgba(16, 16, 16, 0.5019607843);
+  border: 1px solid rgba(16, 16, 16, 0.5019607843);
+  padding: 4px 8px;
+  border-radius: 14px;
+  width: fit-content;
+  white-space: nowrap;
+}
+
 @media (max-width: 1160px) {
   .advantages-item {
     height: 150px;
@@ -978,10 +1043,10 @@
     line-height: 38px;
     letter-spacing: -0.75px;
   }
-  .reviews-section .swiper-slide {
+  .swiper-slide {
     width: calc(100% - 40px);
   }
-  .reviews-section .swiper-wrapper {
+  .swiper-wrapper {
     margin-left: 20px;
   }
   .review-card {
@@ -1042,6 +1107,19 @@
   }
   .deals-section .deals-info {
     margin-bottom: 32px;
+  }
+  .blog-card {
+    width: unset;
+    max-width: 447px;
+  }
+}
+@media (max-width: 415px) {
+  .dot {
+    display: none;
+  }
+  .blog-card-info-top {
+    flex-direction: column-reverse;
+    align-items: flex-start;
   }
 }
 .footer {

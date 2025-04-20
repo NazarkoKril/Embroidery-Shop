@@ -670,29 +670,6 @@
 .reviews-section {
   background-color: var(--color_pure_400);
 
-  .swiper {
-    padding: 100px 0;
-
-    &-wrapper {
-      width: 100%;
-      margin-left: 40px;
-    }
-
-    &-slide {
-      width: 447px;
-    }
-
-    &-button-prev, &-button-next {
-      position: unset;
-      width: fit-content;
-      margin-top: 0;
-
-      &::after {
-        content: none;
-      }
-    }
-  }
-
   .reviews-head {
     margin-bottom: 60px;
     display: flex;
@@ -702,6 +679,29 @@
 
     h2 {
       color: var(--color_black);
+    }
+  }
+}
+
+.swiper {
+  padding: 100px 0;
+
+  &-wrapper {
+    width: 100%;
+    margin-left: 40px;
+  }
+
+  &-slide {
+    width: 447px;
+  }
+
+  &-button-prev, &-button-next {
+    position: unset;
+    width: fit-content;
+    margin-top: 0;
+
+    &::after {
+      content: none;
     }
   }
 }
@@ -945,6 +945,83 @@
   }
 }
 
+.blog-card {
+  border-radius: 20px;
+  overflow: hidden;
+  width: 447px;
+  background-color: var(--color_red_400);
+  display: block;
+  transition: var(--trans);
+
+  &:nth-child(even) {
+      background-color: var(--color_pure_400);
+
+      &:hover, &:active {
+          background-color: var(--color_pure_500);
+      }
+  }
+
+  &:hover, &:active {
+      background-color: var(--color_red_500);
+  }
+
+  &:active {
+      transform: scale(0.9);
+  }
+
+  &:focus-visible {
+      outline: 1px solid var(--color_green_500);
+  }
+
+  &-photo {
+      width: 100%;
+      height: 279px;
+      background:
+          url(../img/icons/digital-marketing_icom.svg) center/120px no-repeat, 
+          linear-gradient(rgba(16, 16, 16, 0.05), rgba(16, 16, 16, 0.05)),
+          linear-gradient(white, white);
+
+      img {
+          height: 100%;
+          object-fit: cover;
+      }
+  }
+
+  &-info {
+      padding: 28px;
+
+      &-top {
+          display: flex;
+          gap: 8px;
+          margin-bottom: 25px;
+          align-items: center;
+
+          .date {
+              color: #10101080;
+          }
+      }
+
+      h4 {
+          color: var(--color_black);
+      }
+  }
+}
+
+.dot {
+  height: 4px;
+  width: 4px;
+  background-color: #10101033;
+  border-radius: 99px;
+}
+
+.tab, .tab-btn {
+  color: #10101080;
+  border: 1px solid #10101080;
+  padding: 4px 8px;
+  border-radius: 14px;
+  width: fit-content;
+  white-space: nowrap;
+}
 
 @media (max-width: 1160px) {
   .advantages-item {
@@ -1166,14 +1243,14 @@
         letter-spacing: -0.75px;
       }
     }
+  }
 
-    .swiper-slide {
-      width: calc(100% - 40px);
-    }
+  .swiper-slide {
+    width: calc(100% - 40px);
+  }
 
-    .swiper-wrapper {
-      margin-left: 20px;
-    }
+  .swiper-wrapper {
+    margin-left: 20px;
   }
 
   .review-card {
@@ -1242,7 +1319,25 @@
     .deals-info {
         margin-bottom: 32px;
     }
+  }
+
+  .blog-card {
+    width: unset;
+    max-width: 447px;
+  }
 }
+
+@media (max-width: 415px) {
+  .dot {
+      display: none;
+  }
+
+  .blog-card {
+      &-info-top {
+          flex-direction: column-reverse;
+          align-items: flex-start;
+      }
+  }
 }
 
 .footer {
