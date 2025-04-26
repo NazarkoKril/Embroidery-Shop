@@ -52,3 +52,35 @@ document.addEventListener('DOMContentLoaded', () => {
         }
      
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const openCartBtns = document.querySelectorAll('.cart-btn'); // ← масив кнопок
+    const closeCartBtn = document.getElementById('close-cart');
+    const cartSidebar = document.querySelector('.basket');
+    const overlay = document.querySelector('.overlay');
+    const deleteItemBtns = document.querySelectorAll('.delete-item')
+  
+    openCartBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        cartSidebar.classList.add('active');
+        overlay.classList.add('active');
+      });
+    });
+  
+    closeCartBtn.addEventListener('click', () => {
+      cartSidebar.classList.remove('active');
+      overlay.classList.remove('active');
+    });
+  
+    overlay.addEventListener('click', () => {
+      cartSidebar.classList.remove('active');
+      overlay.classList.remove('active');
+    });
+
+    deleteItemBtns.forEach(button => {
+        button.addEventListener("click", function () {
+          this.closest(".cart-item").remove();
+        });
+      });
+  });
+  
