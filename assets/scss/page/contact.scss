@@ -2,6 +2,7 @@
     padding: 10px;
     background-color: var(--color_green_500);
     display: flex;
+    row-gap: 32px;
 
     .left, .right {
         flex: 1;
@@ -63,6 +64,7 @@
 
         input {
             background-color: transparent;
+            min-width: 250px;
         }
     }
 
@@ -91,6 +93,7 @@
             align-items: center;
             outline-offset: 2px;
             transition: var(--trans);
+            text-align: center;
 
             .green-btn {
                 width: 40px;
@@ -130,6 +133,7 @@
                 align-items: center;
                 gap: 8px;
                 flex-direction: column;
+                text-align: center;
             }
         }
     }
@@ -139,5 +143,58 @@
         gap: 32px;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+}
+
+@media (max-width: 800px) {
+    .form-section {
+        flex-direction: column;
+        padding: 80px 20px 20px;
+
+        &:first-child {
+            padding-top: 114px;
+        }
+
+        .form-info {
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 616px) {
+    .form-section {
+        .inputs:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .form-section {
+        .form-title {
+            margin-bottom: 20px;
+        }
+
+        .form-info {
+            h2 {
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 38px;
+                letter-spacing: -0.75px;
+                margin-bottom: 32px;
+            }
+        }
+
+        .form-checkboxes {
+            flex-direction: column;
+        }
+
+        .form-file {
+            margin-bottom: 24px;
+
+            .select_file {
+                padding: 20px;
+            }
+        }
     }
 }

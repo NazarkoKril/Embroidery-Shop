@@ -2,6 +2,7 @@
   padding: 10px;
   background-color: var(--color_green_500);
   display: flex;
+  row-gap: 32px;
 }
 .form-section .left, .form-section .right {
   flex: 1;
@@ -51,6 +52,7 @@
 }
 .form-section .inputs input {
   background-color: transparent;
+  min-width: 250px;
 }
 .form-section .form-text p {
   color: rgba(0, 0, 0, 0.6);
@@ -73,6 +75,7 @@
   align-items: center;
   outline-offset: 2px;
   transition: var(--trans);
+  text-align: center;
 }
 .form-section .form-file .select_file .green-btn {
   width: 40px;
@@ -105,10 +108,50 @@
   align-items: center;
   gap: 8px;
   flex-direction: column;
+  text-align: center;
 }
 .form-section .form-bottom {
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .form-section {
+    flex-direction: column;
+    padding: 80px 20px 20px;
+  }
+  .form-section:first-child {
+    padding-top: 114px;
+  }
+  .form-section .form-info {
+    padding: 0;
+  }
+}
+@media (max-width: 616px) {
+  .form-section .inputs:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 500px) {
+  .form-section .form-title {
+    margin-bottom: 20px;
+  }
+  .form-section .form-info h2 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.75px;
+    margin-bottom: 32px;
+  }
+  .form-section .form-checkboxes {
+    flex-direction: column;
+  }
+  .form-section .form-file {
+    margin-bottom: 24px;
+  }
+  .form-section .form-file .select_file {
+    padding: 20px;
+  }
 }
