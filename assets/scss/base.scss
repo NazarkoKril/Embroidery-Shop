@@ -102,6 +102,10 @@
   transition: var(--trans);
   height: fit-content;
   cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.15px;
 
   .btn-icon {
     height: 20px;
@@ -207,6 +211,15 @@
   color: var(--color_white);
   border: none;
   @include general-btn;
+
+  &:disabled {
+    background-color: #10101033;
+    color: #1010104D;
+
+    .btn-icon path {
+      fill: #1010104D;
+    }
+  }
   
   .btn-icon path {
     fill: var(--color_white);
@@ -219,7 +232,7 @@
 
 .gray-btn {
   background-color: var(--color_black_10);
-  padding: 10px;
+  padding: 8px;
   border-radius: 20px;
   border: none;
   display: inline-flex;
@@ -243,6 +256,191 @@
 
   &:active {
     background-color: #10101033;
+    transform: scale(0.9);
+  }
+
+  &:focus-visible {
+    outline: 1px solid var(--color_green_500);
+  }
+}
+
+.input-box {
+  label {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.25px;
+    color: #101010CC;
+
+    .red-text {
+      color: var(--color_red_400);
+    }
+  }
+
+  &:has(.input.error) {
+    label {
+      color: var(--color_red_400);
+    }
+
+    .input-error {
+      display: block;
+    }
+  }
+
+  .input {
+    position: relative;
+    margin-top: 8px;
+
+    &.loading {
+      .input-progress {
+        display: block;
+      }
+    }
+
+    &.valid {
+      .input-valid {
+        display: block;
+      }
+    }
+
+    input, textarea {
+      padding: 10px 16px;
+      border: 1px solid #1010100D;
+      border-radius: 20px;
+      color: var(--color_black);
+      width: 100%;
+      outline: none;
+      transition: var(--trans);
+      outline-offset: 2px;
+      
+
+      &.keyboard-focus {
+          outline: 1px solid var(--color_green_500);
+      }
+
+      &::placeholder {
+          color: #10101080;
+      }
+
+      &:hover {
+          border-color: #10101033;
+          background-color: #1010100D;
+      }
+
+      &:focus {
+          border-color: #10101080;
+          background-color: #1010100D;
+      }
+    }
+
+    input {
+      height: 40px;
+    }
+
+    textarea {
+      max-width: 873px;
+    }
+
+    button, >svg {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 12px;
+      top: 10px;
+      display: none;
+      background: none;
+      border: none;
+
+      &.input-clear {
+        cursor: pointer;
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+
+        path {
+          fill: var(--color_black)
+        }
+      }
+
+      &.input-progress {
+        path {
+          fill: var(--color_black)
+        }
+      }
+
+      &.input-valid {
+        path {
+          fill: var(--color_green_500);
+        }
+      }
+
+      &.input-error {
+        path {
+          fill: var(--color_red_400);
+        }
+      }
+    }
+  }
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  color: #101010E5;
+  transition: var(--trans);
+  gap: 12px;
+  border-radius: 22px;
+  height: 36px;
+  padding: 10px;
+
+  input {
+    display: none;
+
+    &:checked {
+      &:hover, &:active {
+        & + .checkmark {
+          background-color: var(--color_green_500);
+        }
+      }
+
+      & + .checkmark {
+        border: none;
+        background-color: var(--color_green_400);
+  
+        svg {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .checkmark {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #10101080;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--trans);
+    flex-shrink: 0;
+
+    svg {
+      opacity: 0;
+    }
+  }
+
+  &:hover, &:active {
+    color: var(--color_black);
+
+    .checkmark {
+      border-color: var(--color_black);
+    }
+  }
+
+  &:active {
     transform: scale(0.9);
   }
 
@@ -284,15 +482,15 @@ img {
 }
 
 ::-webkit-scrollbar-track {
-  background: #ece5db;
+  background: #1010100D;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4d3e31;
+  background: #101010E5;
   border-radius: 6px;
   transition: all 0.35s ease-in-out;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #453526;
+  background: var(--color_black);
 }
