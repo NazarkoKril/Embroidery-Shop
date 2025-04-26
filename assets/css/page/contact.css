@@ -1,0 +1,114 @@
+.form-section {
+  padding: 10px;
+  background-color: var(--color_green_500);
+  display: flex;
+}
+.form-section .left, .form-section .right {
+  flex: 1;
+}
+.form-section .form-info {
+  padding: 140px 30px;
+}
+.form-section .form-info h2 {
+  margin-bottom: 52px;
+  color: var(--color_white);
+}
+.form-section .form-info p:last-of-type {
+  max-width: 424px;
+  color: var(--color_white);
+}
+.form-section .form-title {
+  color: var(--color_pure_400);
+  margin-bottom: 32px;
+}
+.form-section .form-container {
+  background-color: var(--color_pure_400);
+  border-radius: 20px;
+  padding: 32px;
+}
+.form-section .form-container h4 {
+  margin-bottom: 28px;
+}
+.form-section fieldset {
+  border: none;
+}
+.form-section fieldset:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+.form-section fieldset legend {
+  margin-bottom: 8px;
+}
+.form-section .inputs {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.form-section .inputs:not(:last-child) {
+  margin-bottom: 20px;
+}
+.form-section .inputs .input-box {
+  flex: 1;
+}
+.form-section .inputs input {
+  background-color: transparent;
+}
+.form-section .form-text p {
+  color: rgba(0, 0, 0, 0.6);
+}
+.form-section .form-checkboxes {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.form-section .form-file {
+  margin-bottom: 54px;
+}
+.form-section .form-file .select_file {
+  border: 1px dashed rgba(16, 16, 16, 0.2);
+  border-radius: 20px;
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  outline-offset: 2px;
+  transition: var(--trans);
+}
+.form-section .form-file .select_file .green-btn {
+  width: 40px;
+  height: 40px;
+}
+.form-section .form-file .select_file p:first-of-type {
+  color: rgba(16, 16, 16, 0.6980392157);
+}
+.form-section .form-file .select_file button {
+  color: var(--color_green_500);
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.form-section .form-file .select_file p:last-of-type {
+  color: rgba(16, 16, 16, 0.5019607843);
+}
+.form-section .form-file .select_file:hover {
+  background-color: rgba(16, 16, 16, 0.0509803922);
+}
+.form-section .form-file .select_file:active, .form-section .form-file .select_file.dragover {
+  border-color: rgba(16, 16, 16, 0.5019607843);
+  background-color: var(--color_black_10);
+}
+.form-section .form-file .select_file:focus-visible {
+  outline: 1px solid var(--color_green_500);
+}
+.form-section .form-file .select_file .file-preview {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-direction: column;
+}
+.form-section .form-bottom {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
