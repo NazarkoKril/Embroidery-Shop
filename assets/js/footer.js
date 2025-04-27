@@ -3,8 +3,8 @@ const footerComponent = `<footer class="footer">
         <div class="footer-container">
             <div class="footer-top">
                 <div class="left">
-                    <a href="./" class="logo">
-                        <img src="./assets/img/logo36.svg" alt="logo">
+                    <a href="/" class="logo">
+                        <img src="/assets/img/logo36.svg" alt="logo">
                     </a>
                     <div class="footer-address">
                         <p class="text-body-medium">Los Angeles, 11213</p>

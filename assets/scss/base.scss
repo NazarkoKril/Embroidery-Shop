@@ -339,6 +339,8 @@
 
     textarea {
       max-width: 873px;
+      resize: none;
+      height: 60px;
     }
 
     button, >svg {

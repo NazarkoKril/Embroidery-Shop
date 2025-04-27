@@ -93,7 +93,7 @@
   gap: 4px;
   background: none;
   border: none;
-
+cursor: pointer;
       &::before {
           content: "";
           position: absolute;
@@ -645,7 +645,7 @@
   display: block;
   border-radius: 20px;
   overflow: hidden;
-  width: 446.67px;
+  width: 440px;
   background-color: var(--color_pure_400);
   transition: var(--trans);
 
@@ -1114,7 +1114,7 @@
 .blog-card {
   border-radius: 20px;
   overflow: hidden;
-  width: 447px;
+  width: 440px;
   background-color: var(--color_red_400);
   display: block;
   transition: var(--trans);
