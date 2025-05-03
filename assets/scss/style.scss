@@ -750,6 +750,10 @@ cursor: pointer;
 
 .bestsellers-section {
   padding: 100px 0;
+
+  &.bestsellers-video {
+    background-color: var(--color_pure_400);
+  }
   
   .bestsellers-head {
     margin-bottom: 60px;
@@ -765,6 +769,43 @@ cursor: pointer;
     grid-template-columns: repeat(auto-fill, minmax(332.5px, 1fr));
     grid-auto-rows: 296px;
     gap: 10px;
+
+    .video {
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      grid-column: span 2;
+      grid-row: span 2;
+
+      video {
+        height: 100%;
+      }
+      
+      &-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #1010104D;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: var(--trans);
+      }
+
+      .play-button {
+        height: 60px;
+        width: 60px;
+        border-radius: 30px;
+
+        .btn-icon {
+          height: 30px;
+          width: 30px;
+
+        }
+      }
+    }
 
     .bestsellers-card {
       border-radius: 20px;
@@ -1267,6 +1308,12 @@ cursor: pointer;
         .bestsellers-card-head {
           min-height: 300px;
         }
+      }
+
+      .video {
+        grid-column: span 1;
+        grid-row: span 1;
+        height: 300px;
       }
     }
   }
